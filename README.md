@@ -1,2 +1,2 @@
 # DSA-Journey-
-Tracking my progress in DSA with categorized Java solutions"
+"Tracking my progress in DSA with categorized Java solutions"
