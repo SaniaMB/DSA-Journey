@@ -42,6 +42,7 @@ public class HashMapCode {
             return  -1;
         }
 
+        @SuppressWarnings("unchecked")
         private void rehash(){
             LinkedList<Node> oldBucket[]=buckets;
             buckets = new LinkedList[N*2];
@@ -140,5 +141,8 @@ public class HashMapCode {
          for (int i=0; i< keys.size(); i++){
              System.out.println(keys.get(i)+" "+map.get(keys.get(i)));
          }
+
+         map.remove("India");
+        System.out.println(map.get("India"));
     }
 }
