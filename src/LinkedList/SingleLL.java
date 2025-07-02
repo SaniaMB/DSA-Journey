@@ -145,10 +145,6 @@ public class SingleLL {
             list.addAtPosition(0,1);
             list.addAtPosition(4,4);
             list.printList();
-            list.deleteAtPosition(4);
-            list.printList();
-            list.deleteAtPosition(3);
-            list.printList();
 
 
 
