@@ -166,6 +166,11 @@ public class SingleCircularLl {
 
         sll.display();
 
+        sll.insert(10, 0);
+
+        sll.display();
+
+
 
     }
 
