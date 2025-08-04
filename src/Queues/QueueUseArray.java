@@ -1,6 +1,8 @@
 package Queues;
 
 public class QueueUseArray {
+   // Queue using a Static Array
+
     static class Queuey{
         static int arr[];
         static int rear = -1;

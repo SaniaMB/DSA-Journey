@@ -1,6 +1,8 @@
 package Queues;
 
 public class QueueUseLL {
+    // Simple Queue using a Single-Linked list
+
     static class Node{
         int data;
         Node next;

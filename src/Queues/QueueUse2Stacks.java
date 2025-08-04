@@ -3,6 +3,8 @@ package Queues;
 import java.util.Stack;
 
 public class QueueUse2Stacks {
+    // Queue implemented using 2 stacks
+
     static class Queue{
         static Stack<Integer> s1 = new Stack<>();
         static Stack<Integer> s2 = new Stack<>();
