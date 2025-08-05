@@ -3,15 +3,15 @@ package Queues;
 public class CircularQueueUseArray {
     // Circular Queue using a Static Array
 
-    static class Queuey{
+    static class QueueC {
         static int arr[];
         static int rear = -1;
         static int front = -1;
         static int size;
 
-        Queuey(int size){
+        QueueC(int size){
             arr = new int[size];
-            Queuey.size = size;
+            QueueC.size = size;
         }
 
         public static boolean isEmpty(){
@@ -61,7 +61,7 @@ public class CircularQueueUseArray {
     }
 
     public static void main(String[] args) {
-        Queuey q = new Queuey(5);
+        QueueC q = new QueueC(5);
         q.add(1);
         q.add(2);
         q.add(3);
