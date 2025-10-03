@@ -39,7 +39,7 @@ public class BfsInGraph {
     }
 
     // BFS starting from a given vertex
-    public static void bfsFromVertex(ArrayList<ArrayList<CreateGraphs.Edge>> graph, boolean[] vis, int start){
+    public static void bfsFromVertex(ArrayList<ArrayList<CreateGraphs.Edge>> graph, boolean[] vis, int start){ // O(V + E)
         Queue<Integer> q = new LinkedList<>();
         q.add(start);  // For disconnected Components
 

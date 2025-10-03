@@ -40,7 +40,7 @@ public class Question1 {
 
     public static void solveDfs( ArrayList<ArrayList<CreateGraphs.Edge>> graph, boolean[] vis, int curr, int target, ArrayList<Integer> crr){
         vis[curr] = true;       // mark current node visited
-        crr.add(curr);          // add current node to path
+        crr.add(curr);          // add current node to path          O(V⋅2^V)
 
         if(curr == target) {
             path.add(new ArrayList<>(crr));

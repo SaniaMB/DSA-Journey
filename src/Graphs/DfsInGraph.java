@@ -42,7 +42,7 @@ public class DfsInGraph {
 
     }
 
-    public static void dfs(ArrayList<ArrayList<CreateGraphs.Edge>> graph, int curr, boolean[] vis){
+    public static void dfs(ArrayList<ArrayList<CreateGraphs.Edge>> graph, int curr, boolean[] vis){    // O(V + E)
         System.out.print(curr + " ");
         vis[curr] = true;
 

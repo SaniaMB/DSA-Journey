@@ -14,7 +14,7 @@ public class CreateGraphs {
         }
     }
 
-   public static void createGraph(ArrayList<ArrayList<Edge>> graph, int v){
+   public static void createGraph(ArrayList<ArrayList<Edge>> graph, int v){   // O(V + E)
         for(int i = 0; i < v; i++){
             graph.add(new ArrayList<>());
         }

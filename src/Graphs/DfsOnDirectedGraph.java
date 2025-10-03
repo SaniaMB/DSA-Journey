@@ -20,7 +20,7 @@ public class DfsOnDirectedGraph {
 
     }
 
-    public static boolean isCycle(ArrayList<ArrayList<CreateGraphs.Edge>> graph, boolean[] vis, boolean[] rec, int curr){
+    public static boolean isCycle(ArrayList<ArrayList<CreateGraphs.Edge>> graph, boolean[] vis, boolean[] rec, int curr){   // O(V + E)
         vis[curr] = true;
         rec[curr] = true;
 
@@ -28,9 +28,8 @@ public class DfsOnDirectedGraph {
             int nbr = e.dest;
             if(rec[nbr]){
                 return true;
-            }else if(!vis[nbr]){
-               if(isCycle(graph,vis,rec,nbr)) return true;
-            }
+            }else if(!vis[nbr] && isCycle(graph,vis,rec,nbr))
+                return true;
         }
 
         rec[curr] = false;
@@ -41,8 +40,20 @@ public class DfsOnDirectedGraph {
         int v = 4;
 
         ArrayList<ArrayList<CreateGraphs.Edge>> graph = new ArrayList<>();
+        boolean[] vis = new boolean[v];
+        boolean[] rec = new boolean[v];
+
         createGraph(graph, v);
 
-            System.out.println(isCycle(graph, new boolean[v], new boolean[v], 0));
+        for (int i = 0; i < v; i ++){
+            if(!vis[i]){
+                boolean cycle = isCycle(graph,vis,rec,0);
+                if(cycle){
+                    System.out.println(true);
+                    break;
+                }
+            }
+        }
+
     }
 }
