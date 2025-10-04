@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 
 public class DijkstrasAlgo{
+//        Doesn't work for negative weights
 
     public static void createGraph(ArrayList<ArrayList<WeightedG.Edge>> graph, int v){
         for(int i = 0; i < v; i ++){
@@ -28,16 +29,16 @@ public class DijkstrasAlgo{
 
     public static class Pair implements Comparable<Pair>{
         int node;
-        int dist;
+        int wt;
 
-        public Pair(int node, int dist){
+        public Pair(int node, int wt){
             this.node = node;
-            this.dist = dist;
+            this.wt = wt;
         }
 
         @Override
         public int compareTo(Pair other){
-            return Integer.compare(this.dist, other.dist); // ascending
+            return Integer.compare(this.wt, other.wt); // ascending
         //  return Integer.compare(other.dist, this.dist); // descending
         }
     }
