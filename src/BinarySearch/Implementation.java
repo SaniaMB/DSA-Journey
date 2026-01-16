@@ -12,11 +12,11 @@ public class Implementation {
 
         int mid = (left + right)/2;
 
-        if(nums[mid] == target) return mid;
+       if(nums[mid] == target) return mid;
        if(target > nums[mid]) return binarySearch(nums,target,mid + 1,right);
        if(target < nums[mid]) return binarySearch(nums,target,left,mid - 1);
 
-        return -1;
+       return -1;
     }
 
     public static void main(String[] args) {
