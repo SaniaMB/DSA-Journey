@@ -8,7 +8,7 @@ public class BubbleSort {
     // Best TC = O(n)
     // SC = O(1)
 
-    static int[] nums = {1,2,3,5,9};
+    static int[] nums = {2,4,3,5,1};
 
     public static void sort(int[] nums){
         int n = nums.length;
